@@ -1,0 +1,48 @@
+html, body {
+	min-height: 100%;
+}
+
+#container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.welcome-image{
+	background-image: url('/images/welcome.jpg'); 
+	background-size: cover;
+	height: 400px;
+}
+
+.welcome-trial{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 250px;
+}
+
+.welcome-explore{
+	height: 450px;
+	background-color: #282828;
+}
+
+.welcome-different{
+	height: 350px;
+}
+
+.welcome-references{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #0b94d9;
+	color: white;
+	padding: 20px;
+}
+
+.welcome-references-item{
+	padding: 30px;
+	text-align: center;
+}
