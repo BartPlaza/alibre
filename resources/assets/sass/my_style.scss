@@ -1,9 +1,12 @@
-html, body {
-	min-height: 100%;
+html, body{
+    min-height: 100%;
+    display: flex;
+    flex: 1;
 }
 
 #container {
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -14,6 +17,16 @@ html, body {
 	background-image: url('/images/welcome.jpg'); 
 	background-size: cover;
 	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-image-baner{
+	width: 80%;
+	height: 70%;
+	opacity: 0.9;
+	background-color: white;
 }
 
 .welcome-trial{
@@ -26,6 +39,7 @@ html, body {
 .welcome-explore{
 	background-color: #282828;
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .welcome-explore-item {
@@ -35,9 +49,9 @@ html, body {
 }
 
 .welcome-explore-image {
-	height: 150px;
-	width: 150px;
-	border-radius: 75px;
+	height: 180px;
+	width: 180px;
+	border-radius: 90px;
 	background-color: white;
 	margin: auto;
 	cursor: pointer;
@@ -46,17 +60,37 @@ html, body {
 .welcome-explore-image img {
 	width: 100%;
 	height: 100%;
-	border-radius: 75px;
+	border-radius: 90px;
 	box-shadow: 0 0 10px white;
 }
 
 .welcome-explore-title {
 	padding: 10px;
 	color: white;
+	font-size: 18px;
 }
 
-.welcome-different{
-	height: 350px;
+.welcome-different-item{
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.welcome-different-image {
+	font-size: 100px;
+	text-align: center;
+	line-height: 80px;
+}
+
+.welcome-different-title {
+	font-size: 22px;
+	text-align: center;
+	color: #0b94d9;
+}
+
+.welcome-different-description{
+	font-size: 15px;
+	text-align: center;
+	padding: 20px;
 }
 
 .welcome-references{

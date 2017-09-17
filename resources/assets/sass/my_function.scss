@@ -1,0 +1,50 @@
+.function-background {
+	height: 400px;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.function-background-description {
+	height: 60%;
+	width: 70%;
+	background-color: $blue;
+	border-color: $blue;
+	opacity: 0.8;
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 10px black;
+}
+
+.function-header {
+	background-color: $grey;
+	padding: 20px;
+	color: white;
+	box-shadow: 0 0 5px black;
+}
+
+.function-features-item{
+	padding: 20px 60px 20px 60px;
+	font-size: 18px;
+	text-align: justify;
+
+}
+
+.feautre-title {
+	color: $blue;
+}
+
+.feautre-image{
+	max-width: 100%;
+}
+
+.function-features-sidebar{
+	padding: 20px 60px 20px 60px;
+	font-size: 16px;
+}
+
+.function-features-sidebar h2{
+	color: $blue;
+}
+

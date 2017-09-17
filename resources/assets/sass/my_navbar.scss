@@ -1,12 +1,19 @@
 #my-navbar{
+	background-color: white;
+	height: 60px;
+	font-weight: bold;
+	border-bottom: 1px solid #868686;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.my-navbar-items{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	background-color: white;
-	height: 40px;
-	font-weight: bold;
-	border-bottom: 1px solid #868686;
+	width: 100%;
 }
 
 .my-navbar-item{
@@ -18,4 +25,10 @@
 	cursor: pointer;
 	color: grey;
 	text-decoration: none;
+}
+
+.my-navbar-logo{
+	display: block;
+	height: 50px;
+	margin-left: 10px;
 }

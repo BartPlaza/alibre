@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/modelowanie-3d', function(){
+	return view('modelowanie_3d');
+});
+Route::get('/kontakt', function(){
+	return view('kontakt');
+});
+
+Route::post('/wyslij-wiadomosc', 'FormController@message');
