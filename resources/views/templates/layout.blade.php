@@ -8,9 +8,11 @@
     </head>
     <body>
     	<div id="container">
-    		@include('templates.navbar')
+    		<my-navbar></my-navbar>
     		@yield('content')
     		@include('templates.footer')
     	</div>
+
+        <script src="/js/app.js"></script>
     </body>
 </html>

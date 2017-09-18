@@ -1,34 +1,109 @@
-#my-navbar{
-	background-color: white;
-	height: 60px;
-	font-weight: bold;
-	border-bottom: 1px solid #868686;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	#my-navbar{
+		background-color: white;
+		min-height: 60px;
+		font-weight: bold;
+		border-bottom: 1px solid #868686;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-size: 16px;
+
+		@media #{$mobile} {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	.my-navbar-items{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+
+		@media #{$mobile} {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: 10px;
+			display: none;
+		}
+	}
+
+	.showMenu {
+		display: flex;
+	}
+
+	.my-navbar-item{
+		color: black;
+		text-decoration: none;
+
+		@media #{$mobile} {
+			min-height: 2em;
+		}
+	}
+
+	.my-navbar-item:hover {
+		cursor: pointer;
+		color: grey;
+		text-decoration: none;
+	}
+
+	.my-logo-row{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		min-height: 60px;
+
+		@media #{$mobile} {
+			width: 100%;
+			justify-content: space-between;
+		}
+	}
+	.my-navbar-logo{
+		height: 50px;
+		margin-left: 10px;
+	}
+
+	.my-navbar-mobile{
+		font-size: 25px;
+		margin-right: 15px;
+		display:none;
+		cursor: pointer;
+
+		@media #{$mobile} {
+			display: flex;
+		}
+	}
+
+	.my-nabar-submenu{
+		position:absolute;
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		overflow: hidden;
+		z-index: 5;
+		box-shadow: 0 0 5px grey;
+		border-top: 3px solid #0b94d9;
+
+		@media #{$mobile} {
+			left: 100px;
+		}
+	}
+
+	.my-submenu-item{
+		padding: 5px;
+	}
+
+
+	/*transitions*/
+
+.rolldown-enter-active,
+.rolldown-leave-active {
+  transition: 1.2s;
+  max-height: 400px;
 }
 
-.my-navbar-items{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-}
-
-.my-navbar-item{
-	color: black;
-	text-decoration: none;
-}
-
-.my-navbar-item:hover {
-	cursor: pointer;
-	color: grey;
-	text-decoration: none;
-}
-
-.my-navbar-logo{
-	display: block;
-	height: 50px;
-	margin-left: 10px;
+.rolldown-enter, .rolldown-leave-to
+{
+  max-height: 0px;
 }
