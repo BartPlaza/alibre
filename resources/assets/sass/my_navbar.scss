@@ -75,6 +75,16 @@
 		}
 	}
 
+	.my-navbar-hide{
+		font-size: 15px;
+		margin-right: 15px;
+		display:none;
+
+		@media #{$mobile} {
+			display: flex;
+		}
+	}
+
 	.my-nabar-submenu{
 		position:absolute;
 		display: flex;

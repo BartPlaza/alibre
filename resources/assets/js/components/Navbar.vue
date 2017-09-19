@@ -18,8 +18,8 @@
 				<transition name="rolldown">
 				<div class="my-nabar-submenu"
 					 v-show="showFunctions">
-					<a href="#" class="my-navbar-item my-submenu-item">Porównanie wersji</a>
-					<a href="#" class="my-navbar-item my-submenu-item">Modelowanie 3D</a>
+					<a href="/porownanie-wersji" class="my-navbar-item my-submenu-item">Porównanie wersji</a>
+					<a href="/modelowanie-3d" class="my-navbar-item my-submenu-item">Modelowanie 3D</a>
 					<a href="#" class="my-navbar-item my-submenu-item">Dokumentacja 2D</a>
 					<a href="#" class="my-navbar-item my-submenu-item">Moduł blach</a>
 					<a href="#" class="my-navbar-item my-submenu-item">Fotorealistyczny rendering</a>
@@ -33,7 +33,7 @@
 			<a href="#" class="my-navbar-item">Lorem</a>
 			<a href="#" class="my-navbar-item">Lorem</a>
 			<a href="/kontakt" class="my-navbar-item">Kontakt</a>
-			<div class="my-navbar-item my-navbar-mobile"
+			<div class="my-navbar-item my-navbar-hide"
 				 v-show="showMenu == true">
 				 	<i class="fa fa-eject" aria-hidden="true"
 				 	   v-on:click="showMenu = false"></i>

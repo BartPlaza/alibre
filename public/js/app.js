@@ -42251,12 +42251,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('a', {
     staticClass: "my-navbar-item my-submenu-item",
     attrs: {
-      "href": "#"
+      "href": "/porownanie-wersji"
     }
   }, [_vm._v("Porównanie wersji")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item my-submenu-item",
     attrs: {
-      "href": "#"
+      "href": "/modelowanie-3d"
     }
   }, [_vm._v("Modelowanie 3D")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item my-submenu-item",
@@ -42310,7 +42310,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.showMenu == true),
       expression: "showMenu == true"
     }],
-    staticClass: "my-navbar-item my-navbar-mobile"
+    staticClass: "my-navbar-item my-navbar-hide"
   }, [_c('i', {
     staticClass: "fa fa-eject",
     attrs: {

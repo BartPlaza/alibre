@@ -17,6 +17,11 @@ Route::get('/', function () {
 Route::get('/modelowanie-3d', function(){
 	return view('modelowanie_3d');
 });
+
+Route::get('/porownanie-wersji', function(){
+	return view('porownanie_wersji');
+});
+
 Route::get('/kontakt', function(){
 	return view('kontakt');
 });
