@@ -31,7 +31,7 @@
 
 			<a href="#" class="my-navbar-item">Lorem</a>
 			<a href="#" class="my-navbar-item">Lorem</a>
-			<a href="#" class="my-navbar-item">Lorem</a>
+			<a href="/cennik" class="my-navbar-item">Cennik</a>
 			<a href="/kontakt" class="my-navbar-item">Kontakt</a>
 			<div class="my-navbar-item my-navbar-hide"
 				 v-show="showMenu == true">

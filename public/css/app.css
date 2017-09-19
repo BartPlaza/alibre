@@ -8800,3 +8800,49 @@ body {
   color: #d9534f;
 }
 
+.alibre-price-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.alibre-price-item {
+  padding: 0;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.alibre-price-header {
+  background-color: #0b94d9;
+  padding: 1px 0 10px 0;
+  border-radius: 10px 10px 0 0;
+  color: black;
+}
+
+.alibre-price-value {
+  background-color: #282828;
+  color: white;
+  min-height: 2em;
+  font-size: 22px;
+  line-height: 2em;
+}
+
+.alibre-price-features > li {
+  list-style: none;
+  text-align: left;
+}
+

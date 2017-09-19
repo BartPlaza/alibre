@@ -42296,9 +42296,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Lorem")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item",
     attrs: {
-      "href": "#"
+      "href": "/cennik"
     }
-  }, [_vm._v("Lorem")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Cennik")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item",
     attrs: {
       "href": "/kontakt"

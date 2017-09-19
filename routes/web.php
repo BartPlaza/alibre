@@ -26,4 +26,9 @@ Route::get('/kontakt', function(){
 	return view('kontakt');
 });
 
+Route::get('/cennik', function(){
+	return view('cennik');
+});
+
+
 Route::post('/wyslij-wiadomosc', 'FormController@message');
