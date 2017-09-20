@@ -1,24 +1,60 @@
-.alibre-price-container {
+.alibre-price-navbar {
 	margin-top: 20px;
+	padding: 0;
+}
+
+.price-navbar-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	color: $grey;
+
+	@media #{$mobile} {
+			flex-direction: column;
+		}
+}
+
+.price-navbar-item {
+
+	@media #{$mobile} {
+			min-height: 2em;
+			align-items: center;
+		}
+}
+
+.price-navbar-item:hover {
+	cursor: pointer;
+	color: $blue;
+}
+
+.navbar-item-active {
+	font-weight: bold;
+	color: $blue;
+}
+
+
+.alibre-price-container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	padding: 0;
 }
 
 .alibre-price-item{
 	padding: 0;
-	box-shadow: 0 0 5px black;
-	border-radius: 10px;
-	box-sizing: border-box;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
+	border: 1px solid grey;
+}
+
+.item-with-maintenance {
+
 }
 
 .alibre-price-header{
 	background-color: $blue;
 	padding: 1px 0 10px 0;
-	border-radius: 10px 10px 0 0;
 	color: black;
 }
 
@@ -33,4 +69,11 @@
 .alibre-price-features > li{
 	list-style: none;
 	text-align: left;
+}
+
+.alibre-price-maintenance {
+	background-color: #ffee58;
+	height: 3em;
+	line-height: 3em;
+	box-shadow: 0 0 5px black;
 }

@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('my-navbar', require('./components/Navbar.vue'));
+Vue.component('pricelist', require('./components/Pricelist.vue'));
 
 const app = new Vue({
     el: '#container'
