@@ -1,8 +1,8 @@
 
 <template>
 <div>
-	<div class="alibre-price-navbar col-xs-12">
-		<div class="price-navbar-items well col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+	<div class="alibre-price-navbar col-xs-12 ">
+		<div class="price-navbar-items well col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
 			<div class="price-navbar-item" 
 				 v-bind:class="activeItem == 'Licencje stanowiskowe' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'Licencje stanowiskowe'">
@@ -31,9 +31,9 @@
 		</div>
 	</div>
 
-	<div class="alibre-price-container col-xs-12"
+	<div class="alibre-price-container col-xs-12 col-lg-10 col-lg-offset-1"
 		 v-show="activeItem == 'Licencje stanowiskowe'">
-		<div class="alibre-price-item col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
+		<div class="alibre-price-item col-md-3 col-sm-5 col-xs-10 text-center">
 			<div class="alibre-price-header">
 				<h3><b>Alibre Design Professional</b></h3>
 				Wersja podstawowa
@@ -52,7 +52,7 @@
 			<a href="#" class="btn btn-primary">Kup teraz</a>
 			</div>
 
-				<div class="alibre-price-item item-with-maintenance col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
+				<div class="alibre-price-item item-with-maintenance col-md-3 col-sm-5 col-xs-10 text-center">
 						<div class="alibre-price-header">
 							<h3><b>Alibre Design Professional</b></h3>
 							Wersja podstawowa
@@ -74,7 +74,7 @@
 						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>
-				<div class="alibre-price-item col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
+				<div class="alibre-price-item col-md-3 col-sm-5 col-xs-10 text-center">
 						<div class="alibre-price-header">
 								<h3><b>Alibre Design Expert</b></h3>
 								Pełny pakiet CAD
@@ -99,7 +99,7 @@
 						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>
-				<div class="alibre-price-item item-with-maintenance col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
+				<div class="alibre-price-item item-with-maintenance col-md-3 col-sm-5 col-xs-10 text-center">
 						<div class="alibre-price-header">
 								<h3><b>Alibre Design Expert</b></h3>
 								Pełny pakiet CAD
@@ -142,6 +142,8 @@
 								1290zł netto 
 						</div>	
 						<hr>
+						Przedłużenie opieki technicznej Alibre Design Professiona o kolejny rok przed jej wygaśnięciem
+						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>
 				<div class="alibre-price-item col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
@@ -152,6 +154,8 @@
 						<div class="alibre-price-value">
 								1890zł netto 
 						</div>
+						<hr>
+						Przedłużenie opieki technicznej Alibre Design Expert o kolejny rok przed jej wygaśnięciem
 						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>
@@ -164,6 +168,8 @@
 								1890zł netto 
 						</div>	
 						<hr>
+						Odnowienie opieki technicznej dla Alibre Design Professional na czas jednego roku po wygaśnięciu dotychczasowej opieki technicznej.
+						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>
 				<div class="alibre-price-item item-with-maintenance col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center">
@@ -174,6 +180,8 @@
 						<div class="alibre-price-value">
 								2490zł netto 
 						</div>
+						<hr>
+						Odnowienie opieki technicznej dla Alibre Design Expert na czas jednego roku po wygaśnięciu dotychczasowej opieki technicznej.
 						<hr>
 						<a href="#" class="btn btn-primary">Kup teraz</a>
 				</div>

@@ -1,4 +1,4 @@
 @extends('templates.layout')
 @section('content')
-		<pricelist></pricelist>
+		<test></test>
 @endsection

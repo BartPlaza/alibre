@@ -897,6 +897,7 @@ window.Vue = __webpack_require__(36);
 Vue.component('example', __webpack_require__(37));
 Vue.component('my-navbar', __webpack_require__(40));
 Vue.component('pricelist', __webpack_require__(43));
+Vue.component('test', __webpack_require__(56));
 
 var app = new Vue({
   el: '#container'
@@ -42576,6 +42577,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -42591,9 +42600,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "alibre-price-navbar col-xs-12"
+    staticClass: "alibre-price-navbar col-xs-12 "
   }, [_c('div', {
-    staticClass: "price-navbar-items well col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1"
+    staticClass: "price-navbar-items well col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1"
   }, [_c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'Licencje stanowiskowe' ? 'navbar-item-active' : '',
@@ -42641,7 +42650,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.activeItem == 'Licencje stanowiskowe'),
       expression: "activeItem == 'Licencje stanowiskowe'"
     }],
-    staticClass: "alibre-price-container col-xs-12"
+    staticClass: "alibre-price-container col-xs-12 col-lg-10 col-lg-offset-1"
   }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
@@ -42653,7 +42662,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alibre-price-item col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center"
+    staticClass: "alibre-price-item col-md-3 col-sm-5 col-xs-10 text-center"
   }, [_c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Alibre Design Professional")])]), _vm._v("\r\n\t\t\t\tWersja podstawowa\r\n\t\t\t")]), _vm._v(" "), _c('div', {
@@ -42668,7 +42677,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Kup teraz")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alibre-price-item item-with-maintenance col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center"
+    staticClass: "alibre-price-item item-with-maintenance col-md-3 col-sm-5 col-xs-10 text-center"
   }, [_c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Alibre Design Professional")])]), _vm._v("\r\n\t\t\t\t\t\t\tWersja podstawowa\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
@@ -42685,7 +42694,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Kup teraz")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alibre-price-item col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center"
+    staticClass: "alibre-price-item col-md-3 col-sm-5 col-xs-10 text-center"
   }, [_c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Alibre Design Expert")])]), _vm._v("\r\n\t\t\t\t\t\t\t\tPełny pakiet CAD\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
@@ -42700,7 +42709,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Kup teraz")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alibre-price-item item-with-maintenance col-lg-2 col-md-3 col-sm-5 col-xs-10 text-center"
+    staticClass: "alibre-price-item item-with-maintenance col-md-3 col-sm-5 col-xs-10 text-center"
   }, [_c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Alibre Design Expert")])]), _vm._v("\r\n\t\t\t\t\t\t\t\tPełny pakiet CAD\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
@@ -42722,7 +42731,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Opieka techniczna")])]), _vm._v("\r\n\t\t\t\t\t\t\tDla wersji Professional\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1290zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('a', {
+  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1290zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v("\r\n\t\t\t\t\t\tPrzedłużenie opieki technicznej Alibre Design Professiona o kolejny rok przed jej wygaśnięciem\r\n\t\t\t\t\t\t"), _c('hr'), _vm._v(" "), _c('a', {
     staticClass: "btn btn-primary",
     attrs: {
       "href": "#"
@@ -42735,7 +42744,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Opieka techniczna")])]), _vm._v("\r\n\t\t\t\t\t\t\t\tDla wersji Expert\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1890zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('a', {
+  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1890zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v("\r\n\t\t\t\t\t\tPrzedłużenie opieki technicznej Alibre Design Expert o kolejny rok przed jej wygaśnięciem\r\n\t\t\t\t\t\t"), _c('hr'), _vm._v(" "), _c('a', {
     staticClass: "btn btn-primary",
     attrs: {
       "href": "#"
@@ -42748,7 +42757,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Odnowienie opieki technicznej")])]), _vm._v("\r\n\t\t\t\t\t\t\tDla wersji Professional\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1890zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('a', {
+  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t1890zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v("\r\n\t\t\t\t\t\tOdnowienie opieki technicznej dla Alibre Design Professional na czas jednego roku po wygaśnięciu dotychczasowej opieki technicznej.\r\n\t\t\t\t\t\t"), _c('hr'), _vm._v(" "), _c('a', {
     staticClass: "btn btn-primary",
     attrs: {
       "href": "#"
@@ -42761,7 +42770,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Odnowienie opieki technicznej")])]), _vm._v("\r\n\t\t\t\t\t\t\t\tDla wersji Expert\r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t2490zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('a', {
+  }, [_vm._v("\r\n\t\t\t\t\t\t\t\t2490zł netto \r\n\t\t\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v("\r\n\t\t\t\t\t\tOdnowienie opieki technicznej dla Alibre Design Expert na czas jednego roku po wygaśnięciu dotychczasowej opieki technicznej.\r\n\t\t\t\t\t\t"), _c('hr'), _vm._v(" "), _c('a', {
     staticClass: "btn btn-primary",
     attrs: {
       "href": "#"
@@ -42781,6 +42790,470 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(57),
+  /* template */
+  __webpack_require__(58),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "c:\\xampp\\htdocs\\alibre\\resources\\assets\\js\\components\\Test.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Test.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1323fc1d", Component.options)
+  } else {
+    hotAPI.reload("data-v-1323fc1d", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			activeItem: 'version',
+			version: '',
+			versionPrice: '',
+			type: '',
+			typePrice: '',
+			maintenance: '',
+			maintenancePrice: ''
+		};
+	},
+	methods: {
+		chooseVersion: function chooseVersion(version, price) {
+			this.activeItem = 'type';
+			this.version = version;
+			this.versionPrice = price;
+		},
+		chooseType: function chooseType(type, price) {
+			this.activeItem = 'maintenance';
+			this.type = type;
+			this.typePrice = price;
+		},
+		chooseMaintenance: function chooseMaintenance(value, price) {
+			this.activeItem = 'maddons';
+			this.maintenance = value;
+			this.maintenancePrice = price;
+		}
+	},
+	computed: {
+		maintenanceCost: function maintenanceCost() {
+			if (this.type == 'online' && this.version == 'Professional') {
+				return 1290;
+			} else if (this.type == 'online' && this.version == 'Expert') {
+				return 1890;
+			} else if ((this.type == 'offline' || this.type == 'network') && this.version == 'Professional') {
+				return 1490;
+			} else if ((this.type == 'offline' || this.type == 'network') && this.version == 'Expert') {
+				return 2090;
+			} else {
+				return 'Błąd';
+			}
+		}
+	}
+});
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "alibre-price-navbar col-xs-12 "
+  }, [_c('div', {
+    staticClass: "price-navbar-items well col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1"
+  }, [_c('div', {
+    staticClass: "price-navbar-item",
+    class: _vm.activeItem == 'version' ? 'navbar-item-active' : '',
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'version'
+      }
+    }
+  }, [_vm._v("\r\n\t\t\t\t Wersja programu\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+    staticClass: "price-navbar-item",
+    class: _vm.activeItem == 'type' ? 'navbar-item-active' : '',
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'type'
+      }
+    }
+  }, [_vm._v("\r\n\t\t\t\t Rodzaj licencji\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+    staticClass: "price-navbar-item",
+    class: _vm.activeItem == 'maintenance' ? 'navbar-item-active' : '',
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'maintenance'
+      }
+    }
+  }, [_vm._v("\r\n\t\t\t\t Opieka techniczna\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+    staticClass: "price-navbar-item",
+    class: _vm.activeItem == 'addons' ? 'navbar-item-active' : '',
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'addons'
+      }
+    }
+  }, [_vm._v("\r\n\t\t\t\t Dodatki\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+    staticClass: "price-navbar-item",
+    class: _vm.activeItem == 'summary' ? 'navbar-item-active' : '',
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'summary'
+      }
+    }
+  }, [_vm._v("\r\n\t\t\t\t Podsumowanie\r\n\t\t\t")])])]), _vm._v(" "), _c('div', {
+    staticClass: "price-body-container col-xs-12"
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem == 'version'),
+      expression: "activeItem == 'version'"
+    }],
+    staticClass: "price-items-container col-lg-6 col-lg-offset-1"
+  }, [_c('div', {
+    staticClass: "alibre-price-item col-lg-5 text-center"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t\t5590zł netto \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseVersion('Professional', 5590)
+      }
+    }
+  }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
+  }, [_vm._m(2), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t7200zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseVersion('Expert', 7200)
+      }
+    }
+  }, [_vm._v("Wybierz")])])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem == 'type'),
+      expression: "activeItem == 'type'"
+    }],
+    staticClass: "price-items-container col-lg-6 col-lg-offset-1"
+  }, [_c('div', {
+    staticClass: "alibre-price-item col-lg-3 text-center"
+  }, [_vm._m(4), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t\t+ 0zł \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseType('online', 0)
+      }
+    }
+  }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-lg-3 col-lg-offset-1 text-center"
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t+ 500zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseType('offline', 500)
+      }
+    }
+  }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-lg-3 col-lg-offset-1 text-center"
+  }, [_vm._m(6), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t+ 1500zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseType('network', 1500)
+      }
+    }
+  }, [_vm._v("Wybierz")])])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem == 'maintenance'),
+      expression: "activeItem == 'maintenance'"
+    }],
+    staticClass: "price-items-container col-lg-6 col-lg-offset-1"
+  }, [_c('div', {
+    staticClass: "alibre-price-item col-lg-5 text-center"
+  }, [_vm._m(7), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t\t+ 0zł \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseMaintenance(false, 0)
+      }
+    }
+  }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
+  }, [_vm._m(8), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-value"
+  }, [_vm._v("\r\n\t\t\t\t\t+ " + _vm._s(_vm.maintenanceCost) + "zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.chooseMaintenance(true, _vm.maintenanceCost)
+      }
+    }
+  }, [_vm._v("Wybierz")])])]), _vm._v(" "), _c('div', {
+    staticClass: "price-description-container col-lg-4 well"
+  }, [_vm._v("\r\n\t\tAlibre Design dostępne jest w dwóch wersjach Professional i Expert. Wybierz wersję, która\r\n\t\todpowiada Twoim potrzebom.\r\n\t\t"), _c('hr'), _vm._v("\r\n\t\tPodsumowanie "), _c('br'), _vm._v("\r\n\t\tWersja programu: " + _vm._s(_vm.version) + " | " + _vm._s(_vm.versionPrice)), _c('br'), _vm._v("\r\n\t\tLicencja typu: " + _vm._s(_vm.type) + " | " + _vm._s(_vm.typePrice)), _c('br'), _vm._v("\r\n\t\tOpieka techniczna: " + _vm._s(_vm.maintenance) + " | " + _vm._s(_vm.maintenancePrice) + "\r\n\t\t")])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Alibre Design Professional")])]), _vm._v("\r\n\t\t\t\t\tWersja podstawowa\r\n\t\t\t\t")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
+    staticClass: "alibre-price-features"
+  }, [_c('li', [_vm._v("Modelowanie części 3D")]), _vm._v(" "), _c('li', [_vm._v("Tworzenie złożeń 3D")]), _vm._v(" "), _c('li', [_vm._v("Dokumentacja 2D")]), _vm._v(" "), _c('li', [_vm._v("Podstawowy import/export")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Alibre Design Expert")])]), _vm._v("\r\n\t\t\t\t\tPełny pakiet CAD\r\n\t\t\t\t")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
+    staticClass: "alibre-price-features"
+  }, [_c('li', [_vm._v("Modelowanie części 3D")]), _vm._v(" "), _c('li', [_vm._v("Tworzenie złożeń 3D")]), _vm._v(" "), _c('li', [_vm._v("Dokumentacja 2D")]), _vm._v(" "), _c('li', [_vm._v("Podstawowy import/export")]), _vm._v(" "), _c('li', [_vm._v("Zaawansowany import/export")]), _vm._v(" "), _c('li', [_vm._v("Modelowanie blach")]), _vm._v(" "), _c('li', [_vm._v("Fotorealistyczny rendering")]), _vm._v(" "), _c('li', [_vm._v("Globalne parametry")]), _vm._v(" "), _c('li', [_vm._v("Konfiguracje")]), _vm._v(" "), _c('li', [_vm._v("Bezpośrednia edycja")]), _vm._v(" "), _c('li', [_vm._v("Praca z powierzchniami")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Licencja stanowiskowa")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Licencja offline")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Licencja sieciowa")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Bez opieki technicznej")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "alibre-price-header"
+  }, [_c('h3', [_c('b', [_vm._v("Roczna opieka techniczna")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1323fc1d", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
