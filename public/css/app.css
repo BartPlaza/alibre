@@ -8716,6 +8716,12 @@ body {
   text-align: justify;
 }
 
+@media only screen and (max-width: 767px) {
+  .function-features-item {
+    padding: 10px 0 10px 0;
+  }
+}
+
 .feautre-title {
   color: #0b94d9;
 }
@@ -8753,14 +8759,16 @@ body {
 
 .comparasion-container {
   padding: 0;
-  margin: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
 }
 
 .comparasion-header {
   background-color: #0b94d9;
-  font-size: 22px;
+  font-size: 2vh;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8770,7 +8778,7 @@ body {
 
 .comparasion-subheader {
   background-color: #282828;
-  font-size: 18px;
+  font-size: 2vh;
   color: white;
   min-height: 2em;
   display: -webkit-box;
@@ -8782,6 +8790,8 @@ body {
 }
 
 .comparasion-item {
+  padding: 0;
+  font-size: 1.5vh;
   min-height: 2em;
   display: -webkit-box;
   display: -ms-flexbox;

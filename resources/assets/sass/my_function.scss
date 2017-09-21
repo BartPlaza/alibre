@@ -29,6 +29,10 @@
 	font-size: 18px;
 	text-align: justify;
 
+	@media #{$mobile} {
+			padding: 10px 0 10px 0;
+		}
+
 }
 
 .feautre-title {

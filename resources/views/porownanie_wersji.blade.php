@@ -4,7 +4,7 @@
 	<div class="function-header">
 		<h2>Porównanie wersji</h2>
 	</div>
-	<div class="comparasion-container col-xs-12 col-sm-12 col-md-9">
+	<div class="comparasion-container col-xs-11 col-sm-11 col-md-9">
 		<div class="comparasion-header">
 			<div class="col-xs-4"></div>
 			<div class="col-xs-4 text-center">Alibre Design Professional</div>
