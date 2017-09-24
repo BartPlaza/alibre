@@ -5,26 +5,31 @@
 			<div class="price-navbar-item" 
 				 v-bind:class="activeItem == 'version' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'version'">
+				 <div class="navbar-progress-item progress-item-selected">1</div>
 				 Wersja programu
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'type' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'type'">
+				 <div class="navbar-progress-item">2</div>
 				 Rodzaj licencji
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'maintenance' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'maintenance'">
+				 <div class="navbar-progress-item">3</div>
 				 Opieka techniczna
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'addons' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'addons'">
+				 <div class="navbar-progress-item">4</div>
 				 Dodatki
 			</div>
 			<div class="price-navbar-item"
 			     v-bind:class="activeItem == 'summary' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'summary'">
+				 <div class="navbar-progress-item">5</div>
 				 Podsumowanie
 			</div>
 		</div>

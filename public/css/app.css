@@ -8802,6 +8802,19 @@ body {
   border-bottom: 1px solid #282828;
 }
 
+.comparasion-item-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.comparasion-item-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-left: 10px;
+}
+
 .comparasion-item-green {
   color: #5cb85c;
 }
@@ -8911,5 +8924,31 @@ body {
 
 .price-items-container {
   padding: 0;
+}
+
+.price-navbar-item {
+  opacity: 0.4;
+}
+
+.navbar-item-active {
+  font-weight: bold;
+  color: #0b94d9;
+  opacity: 1;
+}
+
+.navbar-progress-item {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #e4e4d4;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  margin: auto;
+}
+
+.progress-item-selected {
+  background-color: white;
 }
 

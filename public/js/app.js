@@ -42993,6 +42993,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -43057,7 +43062,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.activeItem = 'version'
       }
     }
-  }, [_vm._v("\r\n\t\t\t\t Wersja programu\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "navbar-progress-item progress-item-selected"
+  }, [_vm._v("1")]), _vm._v("\r\n\t\t\t\t Wersja programu\r\n\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'type' ? 'navbar-item-active' : '',
     on: {
@@ -43065,7 +43072,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.activeItem = 'type'
       }
     }
-  }, [_vm._v("\r\n\t\t\t\t Rodzaj licencji\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "navbar-progress-item"
+  }, [_vm._v("2")]), _vm._v("\r\n\t\t\t\t Rodzaj licencji\r\n\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'maintenance' ? 'navbar-item-active' : '',
     on: {
@@ -43073,7 +43082,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.activeItem = 'maintenance'
       }
     }
-  }, [_vm._v("\r\n\t\t\t\t Opieka techniczna\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "navbar-progress-item"
+  }, [_vm._v("3")]), _vm._v("\r\n\t\t\t\t Opieka techniczna\r\n\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'addons' ? 'navbar-item-active' : '',
     on: {
@@ -43081,7 +43092,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.activeItem = 'addons'
       }
     }
-  }, [_vm._v("\r\n\t\t\t\t Dodatki\r\n\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "navbar-progress-item"
+  }, [_vm._v("4")]), _vm._v("\r\n\t\t\t\t Dodatki\r\n\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'summary' ? 'navbar-item-active' : '',
     on: {
@@ -43089,7 +43102,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.activeItem = 'summary'
       }
     }
-  }, [_vm._v("\r\n\t\t\t\t Podsumowanie\r\n\t\t\t")])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "navbar-progress-item"
+  }, [_vm._v("5")]), _vm._v("\r\n\t\t\t\t Podsumowanie\r\n\t\t\t")])])]), _vm._v(" "), _c('div', {
     staticClass: "price-body-container col-xs-12"
   }, [_c('div', {
     directives: [{

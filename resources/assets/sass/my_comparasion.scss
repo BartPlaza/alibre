@@ -32,6 +32,16 @@
 	border-bottom: 1px solid $grey;
 }
 
+
+.comparasion-item-1{
+	flex: 1;
+}
+
+.comparasion-item-2{
+	flex: 2;
+	padding-left: 10px;
+}
+
 .comparasion-item-green{
 	color: #5cb85c;
 }
