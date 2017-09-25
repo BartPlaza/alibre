@@ -8952,3 +8952,39 @@ body {
   background-color: white;
 }
 
+.alibre-price-item {
+  padding: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+}
+
+.alibre-price-value {
+  background-color: #282828;
+  color: white;
+  min-height: 2em;
+  font-size: 2vh;
+}
+
+.alibre-price-header {
+  background-color: #0b94d9;
+  padding: 1px 0 10px 0;
+  color: black;
+  padding: 5px;
+}
+
+.alibre-price-header > h3 {
+  font-size: 2.5vh;
+}
+
+.alibre-price-addons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alibre-price-addon > img {
+  width: 100%;
+  display: block;
+}
+

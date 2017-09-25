@@ -5,40 +5,55 @@
 			<div class="price-navbar-item" 
 				 v-bind:class="activeItem == 'version' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'version'">
-				 <div class="navbar-progress-item progress-item-selected">1</div>
+				 <div class="navbar-progress-item"
+				 v-bind:class="activeItem == 'version' ? 'progress-item-selected' : ''">1</div>
 				 Wersja programu
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'type' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'type'">
-				 <div class="navbar-progress-item">2</div>
+				 <div class="navbar-progress-item"
+				 v-bind:class="activeItem == 'type' ? 'progress-item-selected' : ''">2</div>
 				 Rodzaj licencji
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'maintenance' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'maintenance'">
-				 <div class="navbar-progress-item">3</div>
+				 <div class="navbar-progress-item"
+				 v-bind:class="activeItem == 'maintenance' ? 'progress-item-selected' : ''">3</div>
 				 Opieka techniczna
 			</div>
 			<div class="price-navbar-item"
 				 v-bind:class="activeItem == 'addons' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'addons'">
-				 <div class="navbar-progress-item">4</div>
+				 <div class="navbar-progress-item"
+				 v-bind:class="activeItem == 'addons' ? 'progress-item-selected' : ''">4</div>
 				 Dodatki
 			</div>
 			<div class="price-navbar-item"
 			     v-bind:class="activeItem == 'summary' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'summary'">
-				 <div class="navbar-progress-item">5</div>
+				 <div class="navbar-progress-item"
+				 v-bind:class="activeItem == 'summary' ? 'progress-item-selected' : ''">5</div>
 				 Podsumowanie
 			</div>
 		</div>
 	</div>
 	<div class="price-body-container col-xs-12">
 
-		<div class="price-items-container col-lg-6 col-lg-offset-1"
+		<div class="price-description-container col-lg-3 col-lg-offset-1 well">
+		Alibre Design dostępne jest w dwóch wersjach Professional i Expert. Wybierz wersję, która
+		odpowiada Twoim potrzebom.
+		<hr>
+		Podsumowanie </br>
+		Wersja programu: {{version}} | {{versionPrice}}</br>
+		Licencja typu: {{type}} | {{typePrice}}</br>
+		Opieka techniczna: {{maintenance}} | {{maintenancePrice}}
+		</div>
+
+		<div class="price-items-container col-lg-7"
 			 v-show="activeItem == 'version'">
-			<div class="alibre-price-item col-lg-5 text-center">
+			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Alibre Design Professional</b></h3>
 					Wersja podstawowa
@@ -86,9 +101,9 @@
 		</div>
 
 
-		<div class="price-items-container col-lg-6 col-lg-offset-1"
+		<div class="price-items-container col-lg-7"
 			 v-show="activeItem == 'type'">
-			<div class="alibre-price-item col-lg-3 text-center">
+			<div class="alibre-price-item col-lg-3 col-lg-offset-1 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Licencja stanowiskowa</b></h3>
 				</div>
@@ -123,15 +138,17 @@
 			</div>
 		</div>
 
-		<div class="price-items-container col-lg-6 col-lg-offset-1"
+		<div class="price-items-container col-lg-7"
 			 v-show="activeItem == 'maintenance'">
-			<div class="alibre-price-item col-lg-5 text-center">
+			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Bez opieki technicznej</b></h3>
 				</div>
 				<div class="alibre-price-value">
 						+ 0zł 
 				</div>	
+				<hr>
+					Licencja bez wsparcia technicznego nie zawiera dostępu do aktualizacji oraz wsparcia technicznego
 				<hr>
 				<div class="btn btn-primary"
 					 v-on:click="chooseMaintenance(false, 0)">Wybierz</div>
@@ -141,7 +158,7 @@
 					<h3><b>Roczna opieka techniczna</b></h3>
 				</div>
 				<div class="alibre-price-value">
-					+ {{maintenanceCost}}zł netto
+					{{maintenanceCostText}}
 				</div>
 				<hr>
 				<div class="btn btn-primary"
@@ -149,18 +166,37 @@
 			</div>
 		</div>
 
-
-
-
-		<div class="price-description-container col-lg-4 well">
-		Alibre Design dostępne jest w dwóch wersjach Professional i Expert. Wybierz wersję, która
-		odpowiada Twoim potrzebom.
-		<hr>
-		Podsumowanie </br>
-		Wersja programu: {{version}} | {{versionPrice}}</br>
-		Licencja typu: {{type}} | {{typePrice}}</br>
-		Opieka techniczna: {{maintenance}} | {{maintenancePrice}}
+		<div class="price-items-container col-lg-6 col-lg-offset-1"
+			 v-show="activeItem == 'addons'">
+			<div class="well alibre-price-addons ">
+				<div class="alibre-price-addon col-lg-4">
+					<img src="/images/addons/logo_datapart.png">
+				</div>
+				<div class="alibre-price-addon col-lg-4">
+					<img src="/images/addons/logo_datagear.png">
+				</div>
+				<div class="alibre-price-addon col-lg-4">
+					<img src="/images/addons/logo_datashaft.png">
+				</div>
+			</div>
 		</div>
+
+		<div class="price-items-container col-lg-6 col-lg-offset-1"
+			 v-show="activeItem == 'addons'">
+			<div class="well alibre-price-addons ">
+				<div class="alibre-price-addon col-lg-4">
+					Alibre Motion
+				</div>
+				<div class="alibre-price-addon col-lg-4">
+					Alibre FEA
+				</div>
+				<div class="alibre-price-addon col-lg-4">
+					Alibre 4D
+				</div>
+			</div>
+		</div>
+
+		
 	</div>
 </div>
 </template>
@@ -171,11 +207,11 @@
 			return {
 				activeItem: 'version',
 				version: '',
-				versionPrice: '',
+				versionPrice: 'wybierz wersję',
 				type: '',
-				typePrice: '',
+				typePrice: 'wybierz typ',
 				maintenance: '',
-				maintenancePrice: ''
+				maintenancePrice: 'wybierz opiekę',
 			}
 		},
 		methods: {
@@ -206,7 +242,14 @@
 				} else if ((this.type == 'offline' || this.type == 'network') && this.version == 'Expert') {
 					return 2090;
 				} else {
-					return 'Błąd';
+					return 0;
+				}
+			}, 
+			maintenanceCostText: function() {
+				if(this.maintenanceCost != 0){
+				return '+ ' + this.maintenanceCost + 'zł netto';
+				} else {
+					return 'Wybierz wersję i typ licencji aby poznac cene';
 				}
 			}
 		}

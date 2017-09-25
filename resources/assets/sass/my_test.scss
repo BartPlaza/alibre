@@ -30,3 +30,43 @@
 .progress-item-selected {
 	background-color: white;
 }
+
+
+.alibre-price-item{
+	padding: 0;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border: 1px solid grey;
+}
+
+.alibre-price-value{
+	background-color: $grey;
+	color: white;
+	min-height: 2em;
+	font-size: 2vh;
+}
+
+.alibre-price-header{
+	background-color: $blue;
+	padding: 1px 0 10px 0;
+	color: black;
+	padding: 5px;
+}
+
+.alibre-price-header > h3{
+	font-size: 2.5vh;
+}
+
+.alibre-price-addons{
+	display: flex;
+}
+
+.alibre-price-addon {
+
+}
+
+.alibre-price-addon > img {
+	width: 100%;
+	display: block;
+
+}
