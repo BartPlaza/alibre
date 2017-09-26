@@ -185,13 +185,16 @@
 			 v-show="activeItem == 'addons'">
 			<div class="well alibre-price-addons ">
 				<div class="alibre-price-addon col-lg-4">
-					Alibre Motion
+					<div class="addon-header">SimWise Motion</div>
+					<img src="/images/addons/logo_simwise_motion.png">
 				</div>
 				<div class="alibre-price-addon col-lg-4">
-					Alibre FEA
+					<div class="addon-header">SimWise FEA</div>
+					<img src="/images/addons/logo_simwise_fea.png">
 				</div>
 				<div class="alibre-price-addon col-lg-4">
-					Alibre 4D
+					<div class="addon-header">SimWise 4D</div>
+					<img src="/images/addons/logo_simwise_4d.png">
 				</div>
 			</div>
 		</div>

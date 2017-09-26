@@ -43034,6 +43034,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -43337,11 +43340,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "well alibre-price-addons "
   }, [_c('div', {
     staticClass: "alibre-price-addon col-lg-4"
-  }, [_vm._v("\r\n\t\t\t\t\tAlibre Motion\r\n\t\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("SimWise Motion")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_motion.png"
+    }
+  })]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-addon col-lg-4"
-  }, [_vm._v("\r\n\t\t\t\t\tAlibre FEA\r\n\t\t\t\t")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("SimWise FEA")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_fea.png"
+    }
+  })]), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-addon col-lg-4"
-  }, [_vm._v("\r\n\t\t\t\t\tAlibre 4D\r\n\t\t\t\t")])])
+  }, [_c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("SimWise 4D")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_4d.png"
+    }
+  })])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

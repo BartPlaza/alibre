@@ -62,11 +62,16 @@
 }
 
 .alibre-price-addon {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
 
+.addon-header{
+	
 }
 
 .alibre-price-addon > img {
 	width: 100%;
 	display: block;
-
 }
