@@ -8823,12 +8823,65 @@ body {
   color: #d9534f;
 }
 
-.alibre-price-navbar {
+.alibre-pirce-conatainer {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .alibre-pirce-conatainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.price-body-container {
+  padding: 0;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-body-container {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
+.price-items-container {
   padding: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .price-items-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.alibre-price-navbar {
+  padding: 0px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .alibre-price-navbar {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .price-navbar-items {
+  padding: 10px 2px 10px 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8838,6 +8891,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #282828;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8846,88 +8900,24 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 10px;
   }
+}
+
+.price-navbar-item {
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 767px) {
   .price-navbar-item {
-    min-height: 2em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.6vh;
   }
 }
 
 .price-navbar-item:hover {
   cursor: pointer;
   color: #0b94d9;
-}
-
-.navbar-item-active {
-  font-weight: bold;
-  color: #0b94d9;
-}
-
-.alibre-price-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0;
-}
-
-.alibre-price-item {
-  padding: 0;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border: 1px solid grey;
-}
-
-.alibre-price-header {
-  background-color: #0b94d9;
-  padding: 1px 0 10px 0;
-  color: black;
-}
-
-.alibre-price-value {
-  background-color: #282828;
-  color: white;
-  min-height: 2em;
-  font-size: 22px;
-  line-height: 2em;
-}
-
-.alibre-price-features > li {
-  list-style: none;
-  text-align: left;
-}
-
-.alibre-price-maintenance {
-  background-color: #5cb85c;
-  height: 3em;
-  line-height: 3em;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
-  font-weight: bold;
-}
-
-.price-body-container {
-  padding: 0;
-}
-
-.price-items-container {
-  padding: 0;
-}
-
-.price-navbar-item {
-  opacity: 0.4;
 }
 
 .navbar-item-active {
@@ -8946,6 +8936,12 @@ body {
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
   margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-progress-item {
+    margin-left: 5px;
+  }
 }
 
 .progress-item-selected {
@@ -8977,6 +8973,11 @@ body {
   font-size: 2.5vh;
 }
 
+.alibre-price-features > li {
+  list-style: none;
+  text-align: left;
+}
+
 .alibre-price-addons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8997,5 +8998,32 @@ body {
 .alibre-price-addon > img {
   width: 100%;
   display: block;
+}
+
+.price-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-description-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.description-header {
+  font-size: 1.8vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .description-summary {
+    margin-left: 10px;
+  }
 }
 

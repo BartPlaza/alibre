@@ -1,7 +1,7 @@
 <template>
-<div>
-	<div class="alibre-price-navbar col-xs-12 ">
-		<div class="price-navbar-items well col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+<div class="alibre-pirce-conatainer col-xs-12">
+	<div class="alibre-price-navbar col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1">
+		<div class="price-navbar-items well ">
 			<div class="price-navbar-item" 
 				 v-bind:class="activeItem == 'version' ? 'navbar-item-active' : ''"
 				 v-on:click="activeItem = 'version'">
@@ -39,21 +39,28 @@
 			</div>
 		</div>
 	</div>
-	<div class="price-body-container col-xs-12">
+	<div class="price-body-container">
 
-		<div class="price-description-container col-lg-3 col-lg-offset-1 well">
-		Alibre Design dostępne jest w dwóch wersjach Professional i Expert. Wybierz wersję, która
-		odpowiada Twoim potrzebom.
-		<hr>
-		Podsumowanie </br>
-		Wersja programu: {{version}} | {{versionPrice}}</br>
-		Licencja typu: {{type}} | {{typePrice}}</br>
-		Opieka techniczna: {{maintenance}} | {{maintenancePrice}}
+		<div class="price-description-container col-lg-3 col-lg-offset-1 col-sm-3 col-sm-offset-1 well"
+			 v-show="activeItem != 'summary'">
+			<div class="description-header">
+				<h3>Opis</h3>
+				Alibre Design dostępne jest w dwóch wersjach Professional i Expert.
+				Wybierz wersję, która odpowiada Twoim potrzebom.
+			</div>
 		</div>
 
-		<div class="price-items-container col-lg-7"
+		<div class="description-summary well col-sm-10 col-sm-offset-1 text-center"
+			 v-show="activeItem == 'summary'">
+			<h3>Podsumowanie</h3>
+			<b>Wersja programu:</b> {{version}} </br>
+			<b>Licencja typu:</b> {{type}} </br>
+			<b>Opieka techniczna:</b> {{maintenance}}
+		</div> 
+
+		<div class="price-items-container col-lg-7 col-sm-7"
 			 v-show="activeItem == 'version'">
-			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2  text-center">
 				<div class="alibre-price-header">
 					<h3><b>Alibre Design Professional</b></h3>
 					Wersja podstawowa
@@ -72,7 +79,7 @@
 				<div class="btn btn-primary"
 					 v-on:click="chooseVersion('Professional',5590)">Wybierz</div>
 			</div>
-			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Alibre Design Expert</b></h3>
 					Pełny pakiet CAD
@@ -101,9 +108,9 @@
 		</div>
 
 
-		<div class="price-items-container col-lg-7"
+		<div class="price-items-container col-lg-7 col-sm-7"
 			 v-show="activeItem == 'type'">
-			<div class="alibre-price-item col-lg-3 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Licencja stanowiskowa</b></h3>
 				</div>
@@ -114,7 +121,7 @@
 				<div class="btn btn-primary"
 					 v-on:click="chooseType('online',0)">Wybierz</div>
 			</div>
-			<div class="alibre-price-item col-lg-3 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Licencja offline</b></h3>
 				</div>
@@ -125,7 +132,7 @@
 				<div class="btn btn-primary"
 					 v-on:click="chooseType('offline',500)">Wybierz</div>
 			</div>
-			<div class="alibre-price-item col-lg-3 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Licencja sieciowa</b></h3>
 				</div>
@@ -138,9 +145,9 @@
 			</div>
 		</div>
 
-		<div class="price-items-container col-lg-7"
+		<div class="price-items-container col-lg-7 col-sm-7"
 			 v-show="activeItem == 'maintenance'">
-			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Bez opieki technicznej</b></h3>
 				</div>
@@ -153,7 +160,7 @@
 				<div class="btn btn-primary"
 					 v-on:click="chooseMaintenance(false, 0)">Wybierz</div>
 			</div>
-			<div class="alibre-price-item col-lg-5 col-lg-offset-1 text-center">
+			<div class="alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center">
 				<div class="alibre-price-header">
 					<h3><b>Roczna opieka techniczna</b></h3>
 				</div>
@@ -209,12 +216,12 @@
 		data: function() {
 			return {
 				activeItem: 'version',
-				version: '',
+				version: 'wybierz wersję',
 				versionPrice: 'wybierz wersję',
-				type: '',
+				type: 'wybierz typ',
 				typePrice: 'wybierz typ',
-				maintenance: '',
-				maintenancePrice: 'wybierz opiekę',
+				maintenance: 'wybierz opcję',
+				maintenancePrice: 'wybierz opcję',
 			}
 		},
 		methods: {

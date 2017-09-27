@@ -43037,17 +43037,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
 		return {
 			activeItem: 'version',
-			version: '',
+			version: 'wybierz wersję',
 			versionPrice: 'wybierz wersję',
-			type: '',
+			type: 'wybierz typ',
 			typePrice: 'wybierz typ',
-			maintenance: '',
-			maintenancePrice: 'wybierz opiekę'
+			maintenance: 'wybierz opcję',
+			maintenancePrice: 'wybierz opcję'
 		};
 	},
 	methods: {
@@ -43096,10 +43103,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "alibre-price-navbar col-xs-12 "
+  return _c('div', {
+    staticClass: "alibre-pirce-conatainer col-xs-12"
   }, [_c('div', {
-    staticClass: "price-navbar-items well col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1"
+    staticClass: "alibre-price-navbar col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1"
+  }, [_c('div', {
+    staticClass: "price-navbar-items well "
   }, [_c('div', {
     staticClass: "price-navbar-item",
     class: _vm.activeItem == 'version' ? 'navbar-item-active' : '',
@@ -43156,22 +43165,36 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "navbar-progress-item",
     class: _vm.activeItem == 'summary' ? 'progress-item-selected' : ''
   }, [_vm._v("5")]), _vm._v("\r\n\t\t\t\t Podsumowanie\r\n\t\t\t")])])]), _vm._v(" "), _c('div', {
-    staticClass: "price-body-container col-xs-12"
+    staticClass: "price-body-container"
   }, [_c('div', {
-    staticClass: "price-description-container col-lg-3 col-lg-offset-1 well"
-  }, [_vm._v("\r\n\t\tAlibre Design dostępne jest w dwóch wersjach Professional i Expert. Wybierz wersję, która\r\n\t\todpowiada Twoim potrzebom.\r\n\t\t"), _c('hr'), _vm._v("\r\n\t\tPodsumowanie "), _c('br'), _vm._v("\r\n\t\tWersja programu: " + _vm._s(_vm.version) + " | " + _vm._s(_vm.versionPrice)), _c('br'), _vm._v("\r\n\t\tLicencja typu: " + _vm._s(_vm.type) + " | " + _vm._s(_vm.typePrice)), _c('br'), _vm._v("\r\n\t\tOpieka techniczna: " + _vm._s(_vm.maintenance) + " | " + _vm._s(_vm.maintenancePrice) + "\r\n\t\t")]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem != 'summary'),
+      expression: "activeItem != 'summary'"
+    }],
+    staticClass: "price-description-container col-lg-3 col-lg-offset-1 col-sm-3 col-sm-offset-1 well"
+  }, [_vm._m(0)]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem == 'summary'),
+      expression: "activeItem == 'summary'"
+    }],
+    staticClass: "description-summary well col-sm-10 col-sm-offset-1 text-center"
+  }, [_c('h3', [_vm._v("Podsumowanie")]), _vm._v(" "), _c('b', [_vm._v("Wersja programu:")]), _vm._v(" " + _vm._s(_vm.version) + " "), _c('br'), _vm._v(" "), _c('b', [_vm._v("Licencja typu:")]), _vm._v(" " + _vm._s(_vm.type) + " "), _c('br'), _vm._v(" "), _c('b', [_vm._v("Opieka techniczna:")]), _vm._v(" " + _vm._s(_vm.maintenance) + "\r\n\t\t")]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.activeItem == 'version'),
       expression: "activeItem == 'version'"
     }],
-    staticClass: "price-items-container col-lg-7"
+    staticClass: "price-items-container col-lg-7 col-sm-7"
   }, [_c('div', {
-    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2  text-center"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t\t5590zł netto \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+  }, [_vm._v("\r\n\t\t\t\t\t\t5590zł netto \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
     on: {
       "click": function($event) {
@@ -43179,10 +43202,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(3), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
-  }, [_vm._v("\r\n\t\t\t\t\t7200zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+  }, [_vm._v("\r\n\t\t\t\t\t7200zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
     on: {
       "click": function($event) {
@@ -43196,10 +43219,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.activeItem == 'type'),
       expression: "activeItem == 'type'"
     }],
-    staticClass: "price-items-container col-lg-7"
+    staticClass: "price-items-container col-lg-7 col-sm-7"
   }, [_c('div', {
-    staticClass: "alibre-price-item col-lg-3 col-lg-offset-1 text-center"
-  }, [_vm._m(4), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
   }, [_vm._v("\r\n\t\t\t\t\t\t+ 0zł \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
@@ -43209,8 +43232,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-item col-lg-3 col-lg-offset-1 text-center"
-  }, [_vm._m(5), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(6), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
   }, [_vm._v("\r\n\t\t\t\t\t+ 500zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
@@ -43220,8 +43243,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-item col-lg-3 col-lg-offset-1 text-center"
-  }, [_vm._m(6), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(7), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
   }, [_vm._v("\r\n\t\t\t\t\t+ 1500zł netto\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
@@ -43237,10 +43260,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.activeItem == 'maintenance'),
       expression: "activeItem == 'maintenance'"
     }],
-    staticClass: "price-items-container col-lg-7"
+    staticClass: "price-items-container col-lg-7 col-sm-7"
   }, [_c('div', {
-    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
-  }, [_vm._m(7), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(8), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
   }, [_vm._v("\r\n\t\t\t\t\t\t+ 0zł \r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v("\r\n\t\t\t\t\tLicencja bez wsparcia technicznego nie zawiera dostępu do aktualizacji oraz wsparcia technicznego\r\n\t\t\t\t"), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
@@ -43250,8 +43273,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_vm._v("Wybierz")])]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-item col-lg-5 col-lg-offset-1 text-center"
-  }, [_vm._m(8), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-item col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-2 text-center"
+  }, [_vm._m(9), _vm._v(" "), _c('div', {
     staticClass: "alibre-price-value"
   }, [_vm._v("\r\n\t\t\t\t\t" + _vm._s(_vm.maintenanceCostText) + "\r\n\t\t\t\t")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "btn btn-primary",
@@ -43268,7 +43291,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "activeItem == 'addons'"
     }],
     staticClass: "price-items-container col-lg-6 col-lg-offset-1"
-  }, [_vm._m(9)]), _vm._v(" "), _c('div', {
+  }, [_vm._m(10)]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -43276,8 +43299,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "activeItem == 'addons'"
     }],
     staticClass: "price-items-container col-lg-6 col-lg-offset-1"
-  }, [_vm._m(10)])])])
+  }, [_vm._m(11)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "description-header"
+  }, [_c('h3', [_vm._v("Opis")]), _vm._v("\r\n\t\t\t\tAlibre Design dostępne jest w dwóch wersjach Professional i Expert.\r\n\t\t\t\tWybierz wersję, która odpowiada Twoim potrzebom.\r\n\t\t\t")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Alibre Design Professional")])]), _vm._v("\r\n\t\t\t\t\tWersja podstawowa\r\n\t\t\t\t")])

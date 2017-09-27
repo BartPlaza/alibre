@@ -17,7 +17,7 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor.</p>
-				<img class="feautre-image" src="/images/modelowanie_3d/1.jpg">
+				<img class="feautre-image" src="/images/modelowanie_3d/1.png">
 			</div>
 			<div class="function-features-item">
 				<div class="feautre-title"><h2>Lorem ipsum dolor sit</h2></div>
@@ -38,7 +38,7 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor.</p>
-				<img class="feautre-image" src="/images/modelowanie_3d/3.jpg">
+				<img class="feautre-image" src="/images/modelowanie_3d/3.png">
 			</div>
 		</div>
 		<div class="function-features-sidebar col-md-3 col-sm-12">

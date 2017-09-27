@@ -1,13 +1,68 @@
+
+.alibre-pirce-conatainer{
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+
+	@media #{$mobile} {	
+			flex-direction: row;
+		}	
+}
+
 .price-body-container {
 	padding: 0;
+	margin-top: 20px;
+
+	@media #{$mobile} {	
+			flex: 3;
+		}
 }
 
 .price-items-container {
 	padding:0;
+
+	@media #{$mobile} {	
+		margin-left: 10px;
+		margin-right: 10px;
+		}
+}
+
+.alibre-price-navbar {
+	padding:0px;
+	margin-top: 20px;
+
+	@media #{$mobile} {	
+			flex: 1;
+		}	
+
+}
+
+.price-navbar-items {
+	padding: 10px 2px 10px 2px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	color: $grey;
+	margin-bottom: 0px;
+
+	@media #{$mobile} {	
+			flex-direction: column;
+			margin-left: 10px;
+		}	
 }
 
 .price-navbar-item{
 	opacity: 0.4;
+
+	@media #{$mobile} {	
+			margin-bottom: 20px;
+			font-size: 1.6vh;
+		}	
+}
+
+.price-navbar-item:hover {
+	cursor: pointer;
+	color: $blue;
 }
 
 .navbar-item-active {
@@ -25,6 +80,10 @@
 	background-color: #e4e4d4;
 	box-shadow: 0 0 5px black;
 	margin: auto;
+
+	@media #{$mobile} {	
+		margin-left: 5px;
+		}	
 }
 
 .progress-item-selected {
@@ -57,6 +116,11 @@
 	font-size: 2.5vh;
 }
 
+.alibre-price-features > li{
+	list-style: none;
+	text-align: left;
+}
+
 .alibre-price-addons{
 	display: flex;
 }
@@ -74,4 +138,25 @@
 .alibre-price-addon > img {
 	width: 100%;
 	display: block;
+}
+
+.price-description-container{
+	display: flex;
+	flex-direction: column;
+
+	@media #{$mobile} {	
+		margin-left: 10px;
+		margin-right: 10px;
+		}	
+}
+
+.description-header {
+	font-size: 1.8vh;
+}
+
+.description-summary {
+
+	@media #{$mobile} {	
+		margin-left: 10px;
+		}
 }
