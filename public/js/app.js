@@ -43044,6 +43044,47 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -43054,7 +43095,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			type: 'wybierz typ',
 			typePrice: 'wybierz typ',
 			maintenance: 'wybierz opcję',
-			maintenancePrice: 'wybierz opcję'
+			maintenancePrice: 'wybierz opcję',
+			addons: {
+				datapart: false,
+				datagear: false,
+				datashaft: false,
+				simwise_motion: false,
+				simwise_fea: false,
+				simwise_4d: false
+			},
+			'simwise_4d': false
 		};
 	},
 	methods: {
@@ -43069,7 +43119,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.typePrice = price;
 		},
 		chooseMaintenance: function chooseMaintenance(value, price) {
-			this.activeItem = 'maddons';
+			this.activeItem = 'addons';
 			this.maintenance = value;
 			this.maintenancePrice = price;
 		}
@@ -43174,7 +43224,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "activeItem != 'summary'"
     }],
     staticClass: "price-description-container col-lg-3 col-lg-offset-1 col-sm-3 col-sm-offset-1 well"
-  }, [_vm._m(0)]), _vm._v(" "), _c('div', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.activeItem == 'addons'),
+      expression: "activeItem == 'addons'"
+    }],
+    staticClass: "btn btn-primary summary-button",
+    on: {
+      "click": function($event) {
+        _vm.activeItem = 'summary'
+      }
+    }
+  }, [_vm._v("Przejdź do podsumowania\r\n\t\t\t")])]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -43290,16 +43353,188 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.activeItem == 'addons'),
       expression: "activeItem == 'addons'"
     }],
-    staticClass: "price-items-container col-lg-6 col-lg-offset-1"
-  }, [_vm._m(10)]), _vm._v(" "), _c('div', {
+    staticClass: "price-items-container col-sm-6 col-sm-offset-1"
+  }, [_c('div', {
+    staticClass: "well alibre-price-addons "
+  }, [_c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.datapart
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.datapart = !_vm.addons.datapart
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "/images/addons/logo_datapart.png"
+    }
+  }), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.datapart),
+      expression: "addons.datapart"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.datagear
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.datagear = !_vm.addons.datagear
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "/images/addons/logo_datagear.png"
+    }
+  }), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.datagear),
+      expression: "addons.datagear"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.datashaft
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.datashaft = !_vm.addons.datashaft
+      }
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.datashaft),
+      expression: "addons.datashaft"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_datashaft.png"
+    }
+  })])])]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.activeItem == 'addons'),
       expression: "activeItem == 'addons'"
     }],
-    staticClass: "price-items-container col-lg-6 col-lg-offset-1"
-  }, [_vm._m(11)])])])
+    staticClass: "price-items-container col-sm-6 col-sm-offset-1"
+  }, [_c('div', {
+    staticClass: "well alibre-price-addons "
+  }, [_c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.simwise_motion
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.simwise_motion = !_vm.addons.simwise_motion
+      }
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.simwise_motion),
+      expression: "addons.simwise_motion"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("\r\n\t\t\t\t\t\t\tSimWise Motion")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_motion.png"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.simwise_fea
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.simwise_fea = !_vm.addons.simwise_fea
+      }
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.simwise_fea),
+      expression: "addons.simwise_fea"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("SimWise FEA")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_fea.png"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "alibre-price-addon col-lg-4",
+    class: {
+      'alibre-addon-selected': _vm.addons.simwise_4d
+    },
+    on: {
+      "click": function($event) {
+        _vm.addons.simwise_4d = !_vm.addons.simwise_4d
+      }
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addons.simwise_4d),
+      expression: "addons.simwise_4d"
+    }],
+    staticClass: "addon-shop"
+  }, [_c('i', {
+    staticClass: "fa fa-shopping-cart",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "addon-header"
+  }, [_vm._v("\r\n\t\t\t\t\t\t\tSimWise 4D")]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "/images/addons/logo_simwise_4d.png"
+    }
+  })])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "description-header"
@@ -43340,56 +43575,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "alibre-price-header"
   }, [_c('h3', [_c('b', [_vm._v("Roczna opieka techniczna")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "well alibre-price-addons "
-  }, [_c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('img', {
-    attrs: {
-      "src": "/images/addons/logo_datapart.png"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('img', {
-    attrs: {
-      "src": "/images/addons/logo_datagear.png"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('img', {
-    attrs: {
-      "src": "/images/addons/logo_datashaft.png"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "well alibre-price-addons "
-  }, [_c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('div', {
-    staticClass: "addon-header"
-  }, [_vm._v("SimWise Motion")]), _vm._v(" "), _c('img', {
-    attrs: {
-      "src": "/images/addons/logo_simwise_motion.png"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('div', {
-    staticClass: "addon-header"
-  }, [_vm._v("SimWise FEA")]), _vm._v(" "), _c('img', {
-    attrs: {
-      "src": "/images/addons/logo_simwise_fea.png"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "alibre-price-addon col-lg-4"
-  }, [_c('div', {
-    staticClass: "addon-header"
-  }, [_vm._v("SimWise 4D")]), _vm._v(" "), _c('img', {
-    attrs: {
-      "src": "/images/addons/logo_simwise_4d.png"
-    }
-  })])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

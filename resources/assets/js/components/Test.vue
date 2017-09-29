@@ -48,7 +48,12 @@
 				Alibre Design dostępne jest w dwóch wersjach Professional i Expert.
 				Wybierz wersję, która odpowiada Twoim potrzebom.
 			</div>
+			<div class="btn btn-primary summary-button"
+			     v-show="activeItem == 'addons'"
+				 v-on:click="activeItem = 'summary'">Przejdź do podsumowania
+			</div>
 		</div>
+
 
 		<div class="description-summary well col-sm-10 col-sm-offset-1 text-center"
 			 v-show="activeItem == 'summary'">
@@ -173,40 +178,76 @@
 			</div>
 		</div>
 
-		<div class="price-items-container col-lg-6 col-lg-offset-1"
+		<div class="price-items-container col-sm-6 col-sm-offset-1"
 			 v-show="activeItem == 'addons'">
 			<div class="well alibre-price-addons ">
-				<div class="alibre-price-addon col-lg-4">
+				<div class="alibre-price-addon col-lg-4"
+					 v-bind:class="{'alibre-addon-selected': addons.datapart}"
+				     v-on:click="addons.datapart = !addons.datapart">
 					<img src="/images/addons/logo_datapart.png">
+					<div class="addon-shop"
+				    	 v-show="addons.datapart">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
 				</div>
-				<div class="alibre-price-addon col-lg-4">
+				<div class="alibre-price-addon col-lg-4"
+				     v-bind:class="{'alibre-addon-selected': addons.datagear}"
+				     v-on:click="addons.datagear = !addons.datagear">
 					<img src="/images/addons/logo_datagear.png">
+					<div class="addon-shop"
+				    	 v-show="addons.datagear">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
 				</div>
-				<div class="alibre-price-addon col-lg-4">
+				<div class="alibre-price-addon col-lg-4"
+				     v-bind:class="{'alibre-addon-selected': addons.datashaft}"
+				     v-on:click="addons.datashaft = !addons.datashaft">
+				     <div class="addon-shop"
+				    	 v-show="addons.datashaft">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
 					<img src="/images/addons/logo_datashaft.png">
 				</div>
 			</div>
 		</div>
 
-		<div class="price-items-container col-lg-6 col-lg-offset-1"
+		<div class="price-items-container col-sm-6 col-sm-offset-1"
 			 v-show="activeItem == 'addons'">
 			<div class="well alibre-price-addons ">
-				<div class="alibre-price-addon col-lg-4">
-					<div class="addon-header">SimWise Motion</div>
+				<div class="alibre-price-addon col-lg-4"
+					 v-bind:class="{'alibre-addon-selected': addons.simwise_motion}"
+				     v-on:click="addons.simwise_motion = !addons.simwise_motion">
+				    <div class="addon-shop"
+				    	 v-show="addons.simwise_motion">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
+					<div class="addon-header">
+							SimWise Motion</div>
 					<img src="/images/addons/logo_simwise_motion.png">
 				</div>
-				<div class="alibre-price-addon col-lg-4">
+				<div class="alibre-price-addon col-lg-4"
+				     v-bind:class="{'alibre-addon-selected': addons.simwise_fea}"
+				     v-on:click="addons.simwise_fea = !addons.simwise_fea">
+				    <div class="addon-shop"
+				    	 v-show="addons.simwise_fea">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
 					<div class="addon-header">SimWise FEA</div>
 					<img src="/images/addons/logo_simwise_fea.png">
 				</div>
-				<div class="alibre-price-addon col-lg-4">
-					<div class="addon-header">SimWise 4D</div>
+				<div class="alibre-price-addon col-lg-4"
+					 v-bind:class="{'alibre-addon-selected': addons.simwise_4d}"
+				     v-on:click="addons.simwise_4d = !addons.simwise_4d">
+				    <div class="addon-shop"
+				    	 v-show="addons.simwise_4d">
+				    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				    </div>
+					<div class="addon-header">
+							SimWise 4D</div>
 					<img src="/images/addons/logo_simwise_4d.png">
 				</div>
 			</div>
 		</div>
-
-		
 	</div>
 </div>
 </template>
@@ -222,6 +263,15 @@
 				typePrice: 'wybierz typ',
 				maintenance: 'wybierz opcję',
 				maintenancePrice: 'wybierz opcję',
+				addons: {
+					datapart: false,
+					datagear: false,
+					datashaft: false,
+					simwise_motion: false,
+					simwise_fea: false,
+					simwise_4d: false
+				},
+				'simwise_4d': false
 			}
 		},
 		methods: {
@@ -236,7 +286,7 @@
 				this.typePrice = price;
 			},
 			chooseMaintenance: function(value, price) {
-				this.activeItem = 'maddons';
+				this.activeItem = 'addons';
 				this.maintenance = value;
 				this.maintenancePrice = price;
 			}
