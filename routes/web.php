@@ -30,5 +30,9 @@ Route::get('/cennik', function(){
 	return view('cennik');
 });
 
+Route::get('/pobieranie', function(){
+	return view('pobieranie');
+});
+
 
 Route::post('/wyslij-wiadomosc', 'FormController@message');

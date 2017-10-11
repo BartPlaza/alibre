@@ -42176,11 +42176,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
 		return {
 			showFunctions: false,
+			showSupport: false,
 			showMenu: false
 		};
 	}
@@ -42289,13 +42299,48 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "my-navbar-item",
     attrs: {
       "href": "#"
+    },
+    on: {
+      "mouseover": function($event) {
+        _vm.showSupport = true
+      },
+      "mouseleave": function($event) {
+        _vm.showSupport = false
+      }
     }
-  }, [_vm._v("Lorem")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Wsparcie "), _c('i', {
+    staticClass: "fa fa-caret-down",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" "), _c('transition', {
+    attrs: {
+      "name": "rolldown"
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showSupport),
+      expression: "showSupport"
+    }],
+    staticClass: "my-nabar-submenu"
+  }, [_c('a', {
+    staticClass: "my-navbar-item my-submenu-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Wymagania sprzętowe")]), _vm._v(" "), _c('a', {
+    staticClass: "my-navbar-item my-submenu-item",
+    attrs: {
+      "href": "/pobieranie"
+    }
+  }, [_vm._v("Pobieranie")])])])], 1), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item",
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("Lorem")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Aktualnosci")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item",
     attrs: {
       "href": "/cennik"
