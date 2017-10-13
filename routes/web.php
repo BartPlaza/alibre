@@ -34,5 +34,8 @@ Route::get('/pobieranie', function(){
 	return view('pobieranie');
 });
 
+Route::get('/wymagania-sprzetowe', function(){
+	return view('wymagania_sprzetowe');
+});
 
 Route::post('/wyslij-wiadomosc', 'FormController@message');

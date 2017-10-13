@@ -34,7 +34,7 @@
 				<transition name="rolldown">
 				<div class="my-nabar-submenu"
 					 v-show="showSupport">
-					<a href="#" class="my-navbar-item my-submenu-item">Wymagania sprzętowe</a>
+					<a href="/wymagania-sprzetowe" class="my-navbar-item my-submenu-item">Wymagania sprzętowe</a>
 					<a href="/pobieranie" class="my-navbar-item my-submenu-item">Pobieranie</a>
 				</div>
 				</transition>

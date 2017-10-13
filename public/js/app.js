@@ -42328,7 +42328,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('a', {
     staticClass: "my-navbar-item my-submenu-item",
     attrs: {
-      "href": "#"
+      "href": "/wymagania-sprzetowe"
     }
   }, [_vm._v("Wymagania sprzętowe")]), _vm._v(" "), _c('a', {
     staticClass: "my-navbar-item my-submenu-item",
